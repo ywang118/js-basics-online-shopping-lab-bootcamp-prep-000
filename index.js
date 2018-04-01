@@ -21,6 +21,7 @@ function viewCart() {
  if (!cart.length){
    return "Your shopping cart is empty."
  } 
+  if cart.length >= 1 
    for(let i = 0; i<cart.length;i++) {
      var cart_itemName = []
      var cart_itemPrice = []
