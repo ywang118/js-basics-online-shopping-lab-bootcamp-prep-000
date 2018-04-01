@@ -23,13 +23,13 @@ function viewCart() {
  } 
  var cartDescription = 'In your cart, you have '
   if (cart.length >= 1 ){
-    cartDescription += `${cartDescription} ${cart[0].itemName} at $${cart[0].itemPrice}`
+    cartDescription += `${cart[0].itemName} at $${cart[0].itemPrice}`
   }
   if (cart.length >= 2) {
      var middleCartItemsDescription = ''
      for (var i=1; i<getCart().length -1; i++) 
      for(let i = 0; i<cart.length-1;i++) {
-       middleCartItemsDescription  += ''
+       middleCartItemsDescription  += '${cart[i].itemName} at $${cart[i].itemPrice}'
   }
   
    for(let i = 0; i<cart.length;i++) {
