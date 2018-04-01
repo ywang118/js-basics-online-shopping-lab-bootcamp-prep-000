@@ -10,16 +10,11 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  for(let i =0 ; i < cart.length; i++){
-    if (cart[i].itemName === item ) {
-      return (`${item} has been added to your cart`);
-    }
-  }
   var a = {}
   a.itemName = item 
   a.itemPrice = Math.floor(Math.random()*100 +1)
   cart.push(a)
-  return cart
+  return (`${item} has been added to your cart`)
 }
 
 function viewCart() {
