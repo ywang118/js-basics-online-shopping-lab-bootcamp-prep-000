@@ -31,7 +31,7 @@ function viewCart() {
      for(let i = 0; i<cart.length-1;i++) {
        middleCartItemsDescription  += '${cart[i].itemName} at $${cart[i].itemPrice}'
   }
-  
+  `, ${getCart()[i].itemName} at $${getCart()[i].itemPrice}`
    for(let i = 0; i<cart.length;i++) {
      var cart_itemName = []
      var cart_itemPrice = []
