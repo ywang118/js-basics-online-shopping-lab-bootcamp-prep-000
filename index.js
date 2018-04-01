@@ -49,7 +49,7 @@ function removeFromCart(item) {
       
       cart.splice[i, 1]
     }
-  } return cart_new
+  } return cart
 }
 
 function placeOrder(cardNumber) {
