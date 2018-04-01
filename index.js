@@ -30,13 +30,8 @@ function viewCart() {
      for(let i = 1; i<cart.length-1;i++) {
        middleCartItemsDescription  += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
   }
-    cartDescription += `${middleCartItemsDescription}, and $`
-   for(let i = 0; i<cart.length;i++) {
-     var cart_itemName = []
-     var cart_itemPrice = []
-     cart_item.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-   }
-   return `In your cart, you have ${cart_item.join(', and')}.`
+    cartDescription += `${middleCartItemsDescription}, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}`
+}
 }
 
 function total() {
