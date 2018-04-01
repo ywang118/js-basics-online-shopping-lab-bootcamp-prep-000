@@ -44,16 +44,12 @@ function total() {
 }
 
 
-function removeFromCart(itemName) {
-  var itemToRemove = searchCartForItemToRemove(itemName)
-  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove()
-}
+
 
 function removeFromCart(item) {
   for (let i = 0 ;i < cart.length; i++) {
     if (cart[i].itemName === item) {
-      
-      cart.splice[i, 1]
+      itemstoremove = cart[i]
     }
   } return cart
 }
