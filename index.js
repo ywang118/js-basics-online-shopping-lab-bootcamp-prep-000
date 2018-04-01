@@ -31,8 +31,8 @@ function viewCart() {
        middleCartItemsDescription  += `, ${cart[i].itemName} at $${cart[i].itemPrice}`
   }
     cartDescription += `${middleCartItemsDescription}, and ${cart[cart.length-1].itemName} at $${cart[cart.length-1].itemPrice}`
-}
-  
+} 
+   return cartDescription
 }
 
 function total() {
