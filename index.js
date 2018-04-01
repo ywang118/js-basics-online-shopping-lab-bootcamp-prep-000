@@ -26,8 +26,10 @@ function viewCart() {
     cartDescription += `${cartDescription} ${cart[0].itemName} at $${cart[0].itemPrice}`
   }
   if (cart.length >= 2) {
+     var middleCartItemsDescription = ''
+     for (var i=1; i<getCart().length -1; i++) 
      for(let i = 0; i<cart.length-1;i++) {
-       cartDescription +=
+       middleCartItemsDescription  += ''
   }
   
    for(let i = 0; i<cart.length;i++) {
