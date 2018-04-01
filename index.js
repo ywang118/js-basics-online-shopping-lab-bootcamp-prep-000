@@ -23,9 +23,9 @@ function viewCart() {
  } 
  var cartDescription = 'In your cart, you have '
   if (cart.length >= 1 ){
-    return (`${cartDescription} ${cart[0].itemName} at $`)
+    cartDescription += `${cartDescription} ${cart[0].itemName} at $${cart[0].itemPrice}`
   }
-  
+  if 
    for(let i = 0; i<cart.length;i++) {
      var cart_itemName = []
      var cart_itemPrice = []
